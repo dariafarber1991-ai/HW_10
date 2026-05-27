@@ -1,0 +1,31 @@
+    1  git config --global user.name "Daria Ivanova"
+    2  git config --global user.email dariafarber1991@gmail.com
+    3  git clone https://github.com/dariafarber1991-ai/HW_10.git
+    4  ls
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  nano .gitignore
+    8  git status
+    9  git add text_ignore.txt
+   10  git commit -m "save changes"
+   11  git status
+   12  git add .gitignore
+   13  git commit -m "save changes"
+   14  git status
+   15  ls
+   16  touch main_test.txt
+   17  git add main_test.txt
+   18  git commit -m "save changes"
+   19  git checkout -b branch develop
+   20  git checkout -b branch_develop
+   21  touch develop_test.txt
+   22  git add develop_test.txt
+   23  git commit -m "save changes"
+   24  nano develop_test.txt
+   25  git status
+   26  git add develop_test.txt
+   27  git commit -m "save changes"
+   28  git checkout main
+   29  git merge branch_develop
+   30  git log
+   31  history > command_list.csv
